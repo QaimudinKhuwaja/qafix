@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navbarr from '@/Components/Navbarr'
-import Navbar from '@/Components/Navbar'
-import FooterNavbar from '@/Components/FooterNavberr'
-import Footer from '@/Components/Footer'
+import Navbarr from './Components/Navbarr'
+import Navbar from './Components/Navbar'
+import FooterNavbar from './Components/FooterNavberr'
+import Footer from './Components/Footer'
 
 
 
