@@ -2,8 +2,6 @@
 import { useState, useEffect } from 'react'
 import { client } from '@/sanity/lib/client'//+
 import Image from 'next/image'
-import ProductList from '../Components/ProductList'
-import Electronic from '../electronic/page'
 import shop1 from "../assets/shop1.png";
 import shop2 from "../assets/shop2.png";
 import shop3 from "../assets/shop3.png";
@@ -14,8 +12,20 @@ import lyft from '../assets/lyft.png';
 import brand3 from '../assets/brand3.png';
 import stripe from '../assets/stripe.png';
 import aws from '../assets/aws.png';
-
 import brand6 from '../assets/brand6.png';
+import ProductList from '../Components/ProductList'
+import Electronic from '../electronic/page'
+import Male from '../male/page'
+import Female from '../female/page'
+import Boys from '../boys/page'
+import ChildBaby from '../childBaby/page'
+import FemaleClothes from '../femaleClothes/page'
+import Food from '../food/page'
+import Grocery from '../grocery/page'
+import Kitchen from '../kitchen/page'
+import Makeup from '../makeup/page'
+import Watches from '../watches/page'
+
 
 
 const ShopPage = () => {
@@ -149,10 +159,84 @@ const ShopPage = () => {
           <ProductList />
           </div>
 
+{/* Female Products*/}
+<div className="text-center mt-[50px]">
+          
+          <Female />
+          </div>
+
+
+          {/* Male Products*/}
+<div className="text-center mt-[50px]">
+          
+          <Male />
+          </div>
 
 
 
-   {/* electronic products */}
+          {/* Female Clothes*/}
+<div className="text-center mt-[50px]">
+          
+          <FemaleClothes />
+          </div>
+
+
+
+{/* Child Baby Products*/}
+<div className="text-center mt-[50px]">
+          
+          <ChildBaby />
+          </div>
+
+
+
+{/* Grocery Products*/}
+<div className="text-center mt-[50px]">
+          
+          <Grocery />
+          </div>
+
+
+
+{/* Boys Products*/}
+<div className="text-center mt-[50px]">
+          
+          <Boys />
+          </div>
+
+
+
+          {/* Kitchen Products*/}
+<div className="text-center mt-[50px]">
+          
+          <Kitchen />
+          </div>
+
+
+  {/* Food Products*/}
+<div className="text-center mt-[50px]">
+          
+          <Food />
+          </div>
+
+
+
+          {/* Make Up Products*/}
+<div className="text-center mt-[50px]">
+          
+          <Makeup />
+          </div>
+
+
+
+          {/* Watches*/}
+<div className="text-center mt-[50px]">
+          
+          <Watches />
+          </div>
+
+
+   {/* Electronic Products */}
     <div className="text-center mt-[50px]">
           
           <Electronic />
@@ -161,18 +245,18 @@ const ShopPage = () => {
 
 
 
-      {/* 2nd section starts */}
-   
 
+
+
+
+
+
+      {/* 2nd section starts */}
       <div className="p-4">
   {/* Heading and Views Section */}
   <div className="flex flex-col sm:flex-row items-center justify-between mb-4">
-    
-
     {/* Input and Button Section */}
-    
   </div>
-
   {/* Image Section */}
   <div className='place-items-center'>
  <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[50px] mt-[70px] ml-[20px] ">
