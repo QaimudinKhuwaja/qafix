@@ -354,7 +354,7 @@ const CartPage = () => {
                   />
                   <div>
                     <h2 className="text-xl font-semibold">{item.productName}</h2>
-                    <p className="text-lg text-gray-700">{`$${item.price}`}</p>
+                    <p className="text-lg text-gray-700">{`Rs: ${item.price}`}</p>
                     <div className="flex items-center gap-4 mt-2">
                       <button
                         onClick={() => handleUpdateQuantity(item._id, Math.max(item.quantity - 1, 1))}
@@ -387,7 +387,7 @@ const CartPage = () => {
         {/* Total Price */}
         {cartItems.length > 0 && (
           <div className="mt-6 text-right">
-            <p className="text-2xl font-semibold">Total: ${totalPrice}</p>
+            <p className="text-2xl font-semibold">Total: Rs: {totalPrice}</p>
           </div>
         )}
 

@@ -217,7 +217,7 @@ const CheckoutPage = () => {
                   <Image src={item.image} alt={item.productName} width={80} height={80} className="object-contain rounded-lg mr-6" />
                   <div>
                     <h2 className="text-xl font-semibold">{item.productName}</h2>
-                    <p className="text-lg text-gray-700">{`$${item.price}`}</p>
+                    <p className="text-lg text-gray-700">{`Rs: ${item.price}`}</p>
                     <p className="text-lg text-gray-700">Quantity: {item.quantity}</p>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ const CheckoutPage = () => {
         {/* Total Price */}
         {cartItems.length > 0 && (
           <div className="mt-6 text-right">
-            <p className="text-2xl font-semibold">Total: ${totalPrice}</p>
+            <p className="text-2xl font-semibold">Total: Rs: {totalPrice}</p>
           </div>
         )}
 

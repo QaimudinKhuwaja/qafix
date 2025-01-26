@@ -20,6 +20,10 @@ import team6 from '../assets/team6.jpg';
 import team7 from '../assets/team7.jpg';
 import team8 from '../assets/team8.jpg';
 import team9 from '../assets/team9.jpg';
+import umar from '../assets/umar.jpeg';
+import qaimudin from '../assets/Qaimudin.jpeg'
+import shafqat from '../assets/shafqat.png'
+import Link from 'next/link';
 
 const SecondPag = () => {
   return (
@@ -164,24 +168,27 @@ const SecondPag = () => {
         {/* Image */}
         <div className="w-[280px] h-[231px] overflow-hidden rounded-md relative">
           <Image
-            src={team4}
+            src={qaimudin}
             alt="Profile Image"
             layout="fill"
             objectFit="cover"
+            className=' object-top'
           />
         </div>
 
         {/* Username and Profession */}
         <div className="mt-4 text-center">
-          <h2 className="text-xl font-semibold">Username</h2>
-          <p className="text-[#737373] text-sm mt-1">Profession</p>
+          <h2 className="text-xl font-semibold">Qaimudin Khuwaja</h2>
+          <p className="text-[#737373] text-sm mt-1">Developer <br /> Bussiness Owner</p>
         </div>
 
         {/* Icons Section */}
         <div className="flex gap-[20px] mt-4 justify-center">
           {/* Icon 1 */}
           <div className="w-[30px] h-[30px]">
+            <Link href="https://www.facebook.com/qaimudinkhuwaja">
             <Image src={blueFB} alt="Icon 1" width={30} height={30} objectFit="contain" />
+            </Link>
           </div>
           {/* Icon 2 */}
           <div className="w-[30px] h-[30px]">
@@ -199,25 +206,26 @@ const SecondPag = () => {
         {/* Image */}
         <div className="w-[280px] h-[231px] overflow-hidden rounded-md relative">
           <Image
-            src={team5}
+            src={umar}
             alt="Profile Image"
             layout="fill"
             objectFit="cover"
+            
           />
         </div>
 
         {/* Username and Profession */}
         <div className="mt-4 text-center">
-          <h2 className="text-xl font-semibold">Username</h2>
-          <p className="text-[#737373] text-sm mt-1">Profession</p>
+          <h2 className="text-xl font-semibold">Muhammad Umar</h2>
+          <p className="text-[#737373] text-sm mt-1">Bussiness Manager</p>
         </div>
 
         {/* Icons Section */}
         <div className="flex gap-[20px] mt-4 justify-center">
           {/* Icon 1 */}
-          <div className="w-[30px] h-[30px]">
+          <Link href="https://www.facebook.com/share/18iBxEbexy/">
             <Image src={blueFB} alt="Icon 1" width={30} height={30} objectFit="contain" />
-          </div>
+            </Link>
           {/* Icon 2 */}
           <div className="w-[30px] h-[30px]">
             <Image src={blueInsta} alt="Icon 2" width={30} height={30} objectFit="contain" />
@@ -234,7 +242,7 @@ const SecondPag = () => {
         {/* Image */}
         <div className="w-[280px] h-[231px] overflow-hidden rounded-md relative">
           <Image
-            src={team6}
+            src={shafqat}
             alt="Profile Image"
             layout="fill"
             objectFit="cover"
@@ -243,16 +251,16 @@ const SecondPag = () => {
 
         {/* Username and Profession */}
         <div className="mt-4 text-center">
-          <h2 className="text-xl font-semibold">Username</h2>
-          <p className="text-[#737373] text-sm mt-1">Profession</p>
+          <h2 className="text-xl font-semibold">Shafqat Khuwaja</h2>
+          <p className="text-[#737373] text-sm mt-1">Amazon Seller</p>
         </div>
 
         {/* Icons Section */}
         <div className="flex gap-[20px] mt-4 justify-center">
           {/* Icon 1 */}
-          <div className="w-[30px] h-[30px]">
+          <Link href="https://www.facebook.com/share/19rUYBAgfu/">
             <Image src={blueFB} alt="Icon 1" width={30} height={30} objectFit="contain" />
-          </div>
+            </Link>
           {/* Icon 2 */}
           <div className="w-[30px] h-[30px]">
             <Image src={blueInsta} alt="Icon 2" width={30} height={30} objectFit="contain" />

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import about from '../assets/about.png';
+import about from '../assets/aboutt.jpeg';
 import bigimg from '../assets/bigimg.png';
 import blueInsta from '../assets/blueInsta.png';
 import blueTwiter from '../assets/blueTwiter.png';
@@ -23,37 +23,38 @@ import pink from '../assets/pink.png';
 const HeroSection = () => {
   return (
     <>
-    <section className="relative w-full h-full min-h-screen flex flex-col sm:flex-row">
+<section className="relative w-full min-h-[150vh] flex flex-col sm:flex-row bg-black">
 
-      {/* Text Section */}
-      <div className="relative flex-1 flex items-center justify-start p-6 md:p-12 z-10 text-black">
-        <div className="space-y-4 ml-12 mt-12 sm:ml-24 sm:mt-24"> {/* Adjusted spacing for large screens */}
-          <p className="text-[18px]">ABOUT COMPANY</p>
-          <h1 className="text-[40px] sm:text-4xl md:text-5xl font-bold pt-[13px]">
-            ABOUT US
-          </h1>
-          <p className="pt-[13px] text-[20px] max-w-xs sm:max-w-md md:max-w-lg">
-            We know how large objects will act,  <br />
-            but things on a small scale.
-          </p>
-          <button className="px-6 py-3 pt-[17px] bg-[#23A6F0] text-white font-semibold w-[200px] h-[52px] rounded-lg hover:bg-blue-600 mt-7">
-            Get Quotes Now
-          </button>
-        </div>
-      </div>
+{/* Text Section */}
+<div className="flex-1 flex items-center justify-start p-6 md:p-12 z-10 text-white">
+  <div className="space-y-4 ml-12 mt-12 sm:ml-24 sm:mt-24"> {/* Adjusted spacing for large screens */}
+    <p className="text-[18px]">ABOUT COMPANY</p>
+    <h1 className="text-[32px] sm:text-4xl md:text-5xl font-bold pt-[13px]">
+      ABOUT US
+    </h1>
+    <p className="pt-[13px] text-[18px] sm:text-[20px] max-w-xs sm:max-w-md md:max-w-lg">
+      We know how large objects will act, <br />
+      but things on a small scale.
+    </p>
+    <button className="px-6 py-3 pt-[17px] bg-[#23A6F0] text-white font-semibold w-[200px] h-[52px] rounded-lg hover:bg-blue-600 mt-7">
+      Get Quotes Now
+    </button>
+  </div>
+</div>
 
-      {/* Image Section */}
-      <div className="relative flex-1  min-h-screen ml-5 "> {/* Updated to ensure full height */}
-        <Image
-          src={about} 
-          alt="Hero Image"
-          layout="fill" 
-          objectFit="cover" 
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
+{/* Image Section */}
+<div className="relative flex-1 sm:w-1/2 mt-6 sm:mt-0 sm:ml-5 md:h-[670px] lg:h-[700px]">
+  <Image
+    src={about}
+    alt="Hero Image"
+    layout="fill"
+    objectFit="cover"
+    style={{ objectFit: 'cover' }}
+  />
+</div>
 
-    </section>
+</section>
+
 
 
 

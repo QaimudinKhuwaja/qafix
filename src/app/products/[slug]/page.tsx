@@ -593,7 +593,7 @@ const ProductDetail = () => {
     if (!slug) return;  // Guard clause to handle if slug is not available yet
 
     const fetchProduct = async () => {
-      const res = await client.fetch(`*[_type=="product"]{
+      const res = await client.fetch(`*[_type=="product" || _type == "electronic" || _type == "boys" || _type == "grocery" || _type == "female" || _type == "femaleclothes" || _type == "food" || _type == "kitchen" || _type == "makeup" || _type == "male" || _type == "childbaby" || _type == "watches" ]{
         productName,
         price,
         _id,
@@ -662,7 +662,7 @@ const ProductDetail = () => {
         <div className="w-full max-w-lg text-gray-900">
           <h1 className="text-3xl lg:text-4xl font-semibold leading-tight mb-4">{product.productName}</h1>
           <p className="text-lg text-gray-700 mb-6">{product.description}</p>
-          <p className="text-3xl font-[500] text-orange-600 mb-6">{`$${totalPrice}`}</p>
+          <p className="text-3xl font-[500] text-orange-600 mb-6">{`Rs: ${totalPrice}`}</p>
 
           {/* Additional Details */}
           <div className="text-gray-600 space-y-2 mb-6">
