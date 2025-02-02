@@ -29,8 +29,8 @@ const Navbar = () => {
             onMouseEnter={handleCategoriesHover}
             onMouseLeave={handleCategoriesLeave}
           >
-            <button className="text-black font-[600] hover:text-white bg-slate-400 py-2 px-2 rounded">
-             Shop Categories
+            <button className="text-red-600 font-[600] underline hover:text-white hover:bg-slate-400 py-2 px-2 rounded">
+             Shop Categories <span className="text-sm font-[700] text-green-600">▼</span>
             </button>
 
             {/* Categories dropdown menu */}

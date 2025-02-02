@@ -11,8 +11,8 @@ const page = () => {
     <>
 
    <Hero />
+   <ProductsList />
     <SecondPage />
-    <ProductsList />
     <FourthPage />
     <FifthPage />
     <SixthPage/>

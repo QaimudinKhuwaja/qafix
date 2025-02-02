@@ -27,6 +27,7 @@ const ProductsList = () => {
   // Fetch products from Sanity (client-side)
   useEffect(() => {
     const fetchProducts = async () => {
+      
       const query = '*[_type == "electronic"]{_id, productName, price, category, slug, status, description, "image": image.asset->url, colors}'
       const data = await client.fetch(query)
       setProducts(data)  // Assuming 'data' matches the Idata structure

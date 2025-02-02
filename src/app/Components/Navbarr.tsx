@@ -50,12 +50,12 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <Link href="/" className="text-2xl font-bold">
-          Only For Khuhra
+          Qafix Mart
         </Link>
 
           {/* Right Side: Login/Register (Desktop) */}
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
-          <Link href="#" className="text-[#23A6F0] hover:text-blue-500">Login/Register</Link>
+          <Link href="#" className="text-[#23A6F0] hover:text-blue-500">Khuhra</Link>
         </div>
       </div>
     </nav>

@@ -49,7 +49,7 @@ const ProductsList = () => {
 
   return (
     <div>
-       <h1 className="text-2xl sm:text-1xl font-bold text-center mt-4"> BEST SELLER PRODUCTS</h1>
+       <h1 className="text-2xl sm:text-1xl font-bold text-center mt-10"> BEST SELLER PRODUCTS</h1>
       <div className="flex justify-center items-center space-x-4 mt-8 px-5">
         {/* Input field for search - responsive design */}
         <input
@@ -79,15 +79,15 @@ const ProductsList = () => {
                       src={p.image} 
                       alt={p.productName} 
                       width={200} 
-                      height={200} 
+                      height={130} 
                       style={{ objectFit: 'cover' }} 
                       className=" object-cover object-center" 
                     />
                   </div>
                   {/* Card Content */}
                   <div className="p-4">
-                    <h1 className="text-lg font-semibold truncate">{p.productName}</h1>
-                    <h2 className="text-lg text-red-600 truncate">{p.category}</h2>
+                    <h1 className="text-[22px] font-semibold truncate">{p.productName}</h1>
+                    <h2 className="text-[18px] text-red-600 truncate">{p.category}</h2>
                     <p className="text-gray-600 text-sm truncate">{p.status}</p>
                     <h3 className="text-lg font-semibold text-gray-800 mt-2 underline">Rs: {p.price}</h3>
                     {/* Optional dot icon */}
